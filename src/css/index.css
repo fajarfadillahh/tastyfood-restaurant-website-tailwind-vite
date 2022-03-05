@@ -54,3 +54,8 @@
 .header.sticky-header {
   @apply shadow-[0_4px_12px_rgba(0,0,0,0.1)];
 }
+
+/* ===== SCROLLUP SECTION ===== */
+.scrollup.scroll-action {
+  @apply opacity-100;
+}
