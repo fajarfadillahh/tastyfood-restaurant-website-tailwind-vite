@@ -50,3 +50,7 @@
 .header__menu.show-menu {
   @apply opacity-100 scale-y-100;
 }
+/* Sticky Header */
+.header.sticky-header {
+  @apply shadow-[0_4px_12px_rgba(0,0,0,0.1)];
+}
