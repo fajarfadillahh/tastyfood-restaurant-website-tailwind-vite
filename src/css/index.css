@@ -10,7 +10,7 @@
 @layer components {
   /* Section Class */
   .section {
-    @apply py-24;
+    @apply py-24 xl:py-28;
   }
   .section-subtitle {
     @apply block text-center text-[15px] text-green font-semibold mb-2 lg:text-[16px];
