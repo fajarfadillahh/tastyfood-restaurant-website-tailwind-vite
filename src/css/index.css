@@ -13,7 +13,7 @@
     @apply py-24;
   }
   .section-subtitle {
-    @apply block text-center text-[15px] text-green font-semibold mb-2;
+    @apply block text-center text-[15px] text-green font-semibold mb-2 lg:text-[16px];
   }
   .section-title {
     @apply text-center text-[28px] text-black font-bold leading-title sm:text-[36px];
@@ -21,7 +21,7 @@
 
   /* Button Class */
   .button {
-    @apply flex justify-center py-4 px-8 text-[15px] font-semibold rounded-[15px] transition-all duration-500;
+    @apply flex justify-center py-4 px-8 text-[15px] font-semibold rounded-[15px] transition-all duration-500 lg:text-[16px];
   }
   .button-fill {
     @apply bg-green text-white hover:bg-[#048654];
@@ -38,7 +38,7 @@
   }
 }
 .header__link {
-  @apply text-[15px] text-grey;
+  @apply text-[15px] text-grey lg:text-[16px];
 }
 .header__link.active-link {
   @apply relative text-green font-semibold;

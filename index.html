@@ -27,7 +27,7 @@
       id="header"
     >
       <div
-        class="header__container container h-24 flex justify-between items-center md:relative"
+        class="header__container container h-24 flex justify-between items-center md:relative md:h-28"
       >
         <a
           href="#"
@@ -74,17 +74,23 @@
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
       <section class="home pt-32 pb-24 md:pt-40" id="home">
-        <div class="home__container container grid gap-12">
+        <div
+          class="home__container container grid gap-12 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8"
+        >
           <div
-            class="home__data text-center xs:w-[400px] xs:justify-self-center sm:w-[470px]"
+            class="home__data text-center xs:w-[400px] xs:justify-self-center sm:w-[470px] lg:w-auto lg:justify-self-start lg:text-left"
           >
-            <span class="home__subtitle section-subtitle">Tasty Food</span>
+            <span class="home__subtitle section-subtitle lg:text-left"
+              >Tasty Food</span
+            >
             <h1
-              class="home__title text-[36px] text-black font-bold leading-title mb-4 xs:text-[42px] md:text-[52px]"
+              class="home__title text-[36px] text-black font-bold leading-title mb-4 xs:text-[42px] md:text-[48px]"
             >
               Try the best food <br />of the world
             </h1>
-            <p class="home__text text-[15px] text-grey leading-text mb-8">
+            <p
+              class="home__text text-[15px] text-grey leading-text mb-8 lg:text-[16px] lg:w-[420px]"
+            >
               Taste the delicacy of cuisine with the best ingredients and made
               by a professional chef.
             </p>
@@ -96,7 +102,7 @@
           <img
             src="./src/img/home-img.png"
             alt=""
-            class="home__img xs:w-[400px] xs:justify-self-center md:w-[480px]"
+            class="home__img xs:w-[400px] xs:justify-self-center md:w-[480px] lg:w-auto"
           />
         </div>
       </section>
@@ -104,15 +110,21 @@
 
       <!-- ===== ABOUT SECTION ===== -->
       <section class="about section">
-        <div class="about__container container grid gap-12">
+        <div
+          class="about__container container grid gap-12 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8"
+        >
           <div
-            class="about__data text-center xs:w-[400px] xs:justify-self-center sm:w-[470px]"
+            class="about__data text-center xs:w-[400px] xs:justify-self-center sm:w-[470px] lg:w-auto lg:justify-self-start lg:text-left lg:order-2"
           >
-            <span class="about__subtitle section-subtitle">About Us</span>
-            <h1 class="about__title section-title mb-4">
+            <span class="about__subtitle section-subtitle lg:text-left"
+              >About Us</span
+            >
+            <h1 class="about__title section-title mb-4 lg:text-left">
               We cook the best <br />tasty food
             </h1>
-            <p class="about__text text-[15px] text-grey leading-text mb-8">
+            <p
+              class="about__text text-[15px] text-grey leading-text mb-8 lg:text-[16px] lg:w-[420px]"
+            >
               We cook the best food the entire city, with the excellent customer
               service, the best meals and the best price, visit us.
             </p>
@@ -124,7 +136,7 @@
           <img
             src="./src/img/about-img.jpg"
             alt=""
-            class="about__img rounded-2xl xs:w-[400px] xs:justify-self-center md:w-[480px]"
+            class="about__img rounded-2xl xs:w-[400px] xs:justify-self-center md:w-[480px] lg:w-auto"
           />
         </div>
       </section>
@@ -145,7 +157,7 @@
           </div>
 
           <div
-            class="services__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.5fr] md:grid-cols-2"
+            class="services__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.5fr] md:grid-cols-2 lg:grid-cols-3"
           >
             <div class="services__item grid gap-4 md:w-[280px] md:mx-auto">
               <img
@@ -160,7 +172,7 @@
                   Excellent Food
                 </h3>
                 <p
-                  class="services__item-text text-[15px] text-grey leading-text"
+                  class="services__item-text text-[15px] text-grey leading-text lg:text-[16px]"
                 >
                   We offer clients excellent quality services for man years, the
                   best and delicious food in the city.
@@ -181,7 +193,7 @@
                   Fast Food
                 </h3>
                 <p
-                  class="services__item-text text-[15px] text-grey leading-text"
+                  class="services__item-text text-[15px] text-grey leading-text lg:text-[16px]"
                 >
                   We offer clients excellent quality services for man years, the
                   best and delicious food in the city.
@@ -202,7 +214,7 @@
                   Delivery Food
                 </h3>
                 <p
-                  class="services__item-text text-[15px] text-grey leading-text"
+                  class="services__item-text text-[15px] text-grey leading-text lg:text-[16px]"
                 >
                   We offer clients excellent quality services for man years, the
                   best and delicious food in the city.
@@ -225,7 +237,7 @@
           </div>
 
           <div
-            class="menu__group grid grid-cols-[.7fr] justify-center gap-8 sm:grid-cols-[.5fr] md:grid-cols-2"
+            class="menu__group grid grid-cols-[.7fr] justify-center gap-8 sm:grid-cols-[.5fr] md:grid-cols-2 lg:grid-cols-3"
           >
             <div
               class="menu__item relative grid gap-4 p-8 bg-white rounded-[1.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:w-[280px] md:mx-auto"
@@ -241,7 +253,9 @@
                 >
                   Barbeque Salad
                 </h3>
-                <p class="menu__item-text text-[15px] text-grey mb-4">
+                <p
+                  class="menu__item-text text-[15px] text-grey mb-4 lg:text-[16px]"
+                >
                   Delicious dish
                 </p>
                 <p class="menu__item-price text-[20px] text-black font-bold">
@@ -270,7 +284,9 @@
                 >
                   Barbeque Salad
                 </h3>
-                <p class="menu__item-text text-[15px] text-grey mb-4">
+                <p
+                  class="menu__item-text text-[15px] text-grey mb-4 lg:text-[16px]"
+                >
                   Delicious dish
                 </p>
                 <p class="menu__item-price text-[20px] text-black font-bold">
@@ -299,7 +315,9 @@
                 >
                   Barbeque Salad
                 </h3>
-                <p class="menu__item-text text-[15px] text-grey mb-4">
+                <p
+                  class="menu__item-text text-[15px] text-grey mb-4 lg:text-[16px]"
+                >
                   Delicious dish
                 </p>
                 <p class="menu__item-price text-[20px] text-black font-bold">
@@ -320,13 +338,21 @@
 
       <!-- ===== APP SECTION ===== -->
       <section class="app section">
-        <div class="app__container container grid gap-12">
+        <div
+          class="app__container container grid gap-12 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8"
+        >
           <div
-            class="app__data text-center xs:w-[400px] xs:justify-self-center sm:w-[470px]"
+            class="app__data text-center xs:w-[400px] xs:justify-self-center sm:w-[470px] lg:w-auto lg:justify-self-start lg:text-left lg:order-2"
           >
-            <span class="app__subtitle section-subtitle">Get More</span>
-            <h1 class="app__title section-title mb-4">App is available</h1>
-            <p class="app__text text-[15px] text-grey leading-text mb-8">
+            <span class="app__subtitle section-subtitle lg:text-left"
+              >Get More</span
+            >
+            <h1 class="app__title section-title mb-4 lg:text-left">
+              App is available
+            </h1>
+            <p
+              class="app__text text-[15px] text-grey leading-text mb-8 lg:text-[16px]"
+            >
               Find our application and download it, you can make reservations,
               food orders, see your delivaries on the way and much more.
             </p>
@@ -353,7 +379,7 @@
           <img
             src="./src/img/app-img.png"
             alt=""
-            class="app__img xs:w-[400px] xs:justify-self-center md:w-[480px]"
+            class="app__img xs:w-[400px] xs:justify-self-center md:w-[480px] lg:w-auto"
           />
         </div>
       </section>
@@ -371,7 +397,9 @@
             <h1 class="newsletter__title section-title mb-4">
               Subscribe our newsletter
             </h1>
-            <p class="newsletter__text text-[15px] text-grey leading-text">
+            <p
+              class="newsletter__text text-[15px] text-grey leading-text lg:text-[16px]"
+            >
               Get the latest information about the latest menu, recipes,
               discounts, and other news from us.
             </p>
@@ -384,7 +412,7 @@
             <input
               type="text"
               placeholder="Enter your email address"
-              class="newsletter__input flex py-4 px-8 border-2 border-solid border-[rgba(0,0,0,0.1)] rounded-[15px] text-center text-[15px] text-black font-semibold placeholder:text-[15px] placeholder:text-[rgba(0,0,0,0.3)] md:text-left md:w-full"
+              class="newsletter__input flex py-4 px-8 border-2 border-solid border-[rgba(0,0,0,0.1)] rounded-[15px] text-center text-[15px] text-black font-semibold placeholder:text-[15px] placeholder:text-[rgba(0,0,0,0.3)] md:text-left md:w-full lg:text-[16px] lg:placeholder:text-[16px]"
             />
             <button class="newsletter__button button button-fill">
               Subscribe
@@ -408,7 +436,7 @@
               >Tasty Food</a
             >
             <p
-              class="footer__text text-[15px] text-grey leading-text my-4 xs:w-[260px]"
+              class="footer__text text-[15px] text-grey leading-text my-4 xs:w-[260px] lg:text-[16px]"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores quasi corporis dicta, nam aperiam dolorem.
@@ -452,28 +480,28 @@
               <li>
                 <a
                   href="#"
-                  class="footer__item-link text-[15px] text-grey hover:text-green"
+                  class="footer__item-link text-[15px] text-grey hover:text-green lg:text-[16px]"
                   >Delivery</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="footer__item-link text-[15px] text-grey hover:text-green"
+                  class="footer__item-link text-[15px] text-grey hover:text-green lg:text-[16px]"
                   >Pricing</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="footer__item-link text-[15px] text-grey hover:text-green"
+                  class="footer__item-link text-[15px] text-grey hover:text-green lg:text-[16px]"
                   >Fast Food</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="footer__item-link text-[15px] text-grey hover:text-green"
+                  class="footer__item-link text-[15px] text-grey hover:text-green lg:text-[16px]"
                   >Reserve Your Spot</a
                 >
               </li>
@@ -491,28 +519,28 @@
               <li>
                 <a
                   href="#"
-                  class="footer__item-link text-[15px] text-grey hover:text-green"
+                  class="footer__item-link text-[15px] text-grey hover:text-green lg:text-[16px]"
                   >Event</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="footer__item-link text-[15px] text-grey hover:text-green"
+                  class="footer__item-link text-[15px] text-grey hover:text-green lg:text-[16px]"
                   >Contact Us</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="footer__item-link text-[15px] text-grey hover:text-green"
+                  class="footer__item-link text-[15px] text-grey hover:text-green lg:text-[16px]"
                   >Privacy Policy</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="footer__item-link text-[15px] text-grey hover:text-green"
+                  class="footer__item-link text-[15px] text-grey hover:text-green lg:text-[16px]"
                   >Terms & Conditions</a
                 >
               </li>
@@ -527,13 +555,13 @@
             </h3>
 
             <ul class="footer__item-list flex flex-col gap-2">
-              <p class="footer__item-text text-[15px] text-grey">
+              <p class="footer__item-text text-[15px] text-grey lg:text-[16px]">
                 Jakarta Selatan
               </p>
-              <p class="footer__item-text text-[15px] text-grey">
+              <p class="footer__item-text text-[15px] text-grey lg:text-[16px]">
                 +62123456789
               </p>
-              <p class="footer__item-text text-[15px] text-grey">
+              <p class="footer__item-text text-[15px] text-grey lg:text-[16px]">
                 Admin@tastyfood.com
               </p>
             </ul>
@@ -544,7 +572,7 @@
           class="footer__copy pt-12 border-t-2 border-solid border-[rgba(0,0,0,0.1)]"
         >
           <p
-            class="footer__copy-text text-[15px] text-green text-center font-medium"
+            class="footer__copy-text text-[15px] text-green text-center font-medium lg:text-[16px]"
           >
             © Tasty Food 2021. All rights reserved
           </p>
