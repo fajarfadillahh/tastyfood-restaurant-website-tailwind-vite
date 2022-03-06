@@ -16,7 +16,7 @@
     @apply block text-center text-[15px] text-green font-semibold mb-2;
   }
   .section-title {
-    @apply text-center text-[28px] text-black font-bold leading-title;
+    @apply text-center text-[28px] text-black font-bold leading-title sm:text-[36px];
   }
 
   /* Button Class */
