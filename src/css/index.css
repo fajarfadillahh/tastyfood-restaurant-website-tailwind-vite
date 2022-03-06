@@ -67,3 +67,10 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-[rgba(0,0,0,0.1)]  hover:bg-[rgba(0,0,0,0.3)];
 }
+
+/* ===== SELECTION ===== */
+::selection {
+  @apply bg-[rgba(5,_156,_83,_0.4)] text-white;
+
+  text-shadow: none;
+}
