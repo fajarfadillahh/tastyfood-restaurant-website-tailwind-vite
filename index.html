@@ -73,14 +73,14 @@
 
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
-      <section class="home pt-32 pb-24" id="home">
+      <section class="home pt-32 pb-24 md:pt-40" id="home">
         <div class="home__container container grid gap-12">
           <div
             class="home__data text-center xs:w-[400px] xs:justify-self-center sm:w-[470px]"
           >
             <span class="home__subtitle section-subtitle">Tasty Food</span>
             <h1
-              class="home__title text-[36px] text-black font-bold leading-title mb-4 xs:text-[42px]"
+              class="home__title text-[36px] text-black font-bold leading-title mb-4 xs:text-[42px] md:text-[52px]"
             >
               Try the best food <br />of the world
             </h1>
@@ -96,7 +96,7 @@
           <img
             src="./src/img/home-img.png"
             alt=""
-            class="home__img xs:w-[400px] xs:justify-self-center"
+            class="home__img xs:w-[400px] xs:justify-self-center md:w-[480px]"
           />
         </div>
       </section>
@@ -124,7 +124,7 @@
           <img
             src="./src/img/about-img.jpg"
             alt=""
-            class="about__img rounded-2xl xs:w-[400px] xs:justify-self-center"
+            class="about__img rounded-2xl xs:w-[400px] xs:justify-self-center md:w-[480px]"
           />
         </div>
       </section>
@@ -145,9 +145,9 @@
           </div>
 
           <div
-            class="services__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.5fr]"
+            class="services__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.5fr] md:grid-cols-2"
           >
-            <div class="services__item grid gap-4">
+            <div class="services__item grid gap-4 md:w-[280px] md:mx-auto">
               <img
                 src="./src/img/service-icon-(1).svg"
                 alt=""
@@ -168,7 +168,7 @@
               </div>
             </div>
 
-            <div class="services__item grid gap-4">
+            <div class="services__item grid gap-4 md:w-[280px] md:mx-auto">
               <img
                 src="./src/img/service-icon-(2).svg"
                 alt=""
@@ -189,7 +189,7 @@
               </div>
             </div>
 
-            <div class="services__item grid gap-4">
+            <div class="services__item grid gap-4 md:w-[280px] md:mx-auto">
               <img
                 src="./src/img/service-icon-(3).svg"
                 alt=""
@@ -225,10 +225,10 @@
           </div>
 
           <div
-            class="menu__group grid grid-cols-[.7fr] justify-center gap-8 sm:grid-cols-[.5fr]"
+            class="menu__group grid grid-cols-[.7fr] justify-center gap-8 sm:grid-cols-[.5fr] md:grid-cols-2"
           >
             <div
-              class="menu__item relative grid gap-4 p-8 bg-white rounded-[1.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
+              class="menu__item relative grid gap-4 p-8 bg-white rounded-[1.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:w-[280px] md:mx-auto"
             >
               <img
                 src="./src/img/menu-img-(1).png"
@@ -257,7 +257,7 @@
             </div>
 
             <div
-              class="menu__item relative grid gap-4 p-8 bg-white rounded-[1.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
+              class="menu__item relative grid gap-4 p-8 bg-white rounded-[1.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:w-[280px] md:mx-auto"
             >
               <img
                 src="./src/img/menu-img-(2).png"
@@ -286,7 +286,7 @@
             </div>
 
             <div
-              class="menu__item relative grid gap-4 p-8 bg-white rounded-[1.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
+              class="menu__item relative grid gap-4 p-8 bg-white rounded-[1.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:w-[280px] md:mx-auto"
             >
               <img
                 src="./src/img/menu-img-(3).png"
@@ -353,7 +353,7 @@
           <img
             src="./src/img/app-img.png"
             alt=""
-            class="app__img xs:w-[400px] xs:justify-self-center"
+            class="app__img xs:w-[400px] xs:justify-self-center md:w-[480px]"
           />
         </div>
       </section>
@@ -379,12 +379,12 @@
 
           <form
             action=""
-            class="newsletter__direction flex flex-col gap-4 xs:w-[400px] xs:justify-self-center sm:w-[470px]"
+            class="newsletter__direction flex flex-col gap-4 xs:w-[400px] xs:justify-self-center sm:w-[470px] md:flex-row md:justify-between md:items-center"
           >
             <input
               type="text"
               placeholder="Enter your email address"
-              class="newsletter__input flex py-4 px-8 border-2 border-solid border-[rgba(0,0,0,0.1)] rounded-[15px] text-center text-[15px] text-black font-semibold placeholder:text-[15px] placeholder:text-[rgba(0,0,0,0.4)]"
+              class="newsletter__input flex py-4 px-8 border-2 border-solid border-[rgba(0,0,0,0.1)] rounded-[15px] text-center text-[15px] text-black font-semibold placeholder:text-[15px] placeholder:text-[rgba(0,0,0,0.3)] md:text-left md:w-full"
             />
             <button class="newsletter__button button button-fill">
               Subscribe
